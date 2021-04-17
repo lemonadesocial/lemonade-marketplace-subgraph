@@ -2,13 +2,13 @@ specVersion: 0.0.2
 description: Lemonade Marketplace Subgraph
 repository: https://github.com/lemonadesocial/lemonade-marketplace-subgraph
 schema:
-  file: ./schema.graphql
+  file: schema.graphql
 dataSources:
   - kind: ethereum/contract
     name: LemonadeMarketplace
     network: mumbai
     source:
-      address: '0x241930f9d59d9e8c5263571732FA74622a195E1A'
+      address: "0x241930f9d59d9e8c5263571732FA74622a195E1A"
       abi: LemonadeMarketplace
       startBlock: 13267507
     mapping:
@@ -19,7 +19,7 @@ dataSources:
         - Offer
       abis:
         - name: LemonadeMarketplace
-          file: ./abis/LemonadeMarketplace.json
+          file: LemonadeMarketplace/abis/LemonadeMarketplace.json
       eventHandlers:
         - event: OfferCreated(indexed uint256,indexed address,address,uint256,address,uint256)
           handler: handleOfferCreated
@@ -27,4 +27,4 @@ dataSources:
           handler: handleOfferAccepted
         - event: OfferWithdrawn(indexed uint256)
           handler: handleOfferWithdrawn
-      file: ./src/mapping.ts
+      file: LemonadeMarketplace/LemonadeMarketplace.wasm

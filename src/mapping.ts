@@ -1,22 +1,40 @@
-import { NewGravatar, UpdatedGravatar } from '../generated/Gravity/Gravity'
-import { Gravatar } from '../generated/schema'
 
-export function handleNewGravatar(event: NewGravatar): void {
-  let gravatar = new Gravatar(event.params.id.toHex())
-  gravatar.owner = event.params.owner
-  gravatar.displayName = event.params.displayName
-  gravatar.imageUrl = event.params.imageUrl
-  gravatar.save()
+import { OfferCreated, OfferWithdrawn, OfferAccepted } from '../generated/LemonadeMarketplace/LemonadeMarketplace';
+import { Offer } from '../generated/schema'
+
+export function handleOfferCreated(event: OfferCreated): void {
+  let offer = new Offer(event.address.toHex() + '_' + event.params.offerId.toHex());
+  offer.lastBlock = event.block.number;
+  offer.createdAt = event.block.timestamp;
+  offer.offerContract = event.address;
+  offer.offerId = event.params.offerId;
+
+  offer.active = true;
+  offer.seller = event.params.seller;
+  offer.currency = event.params.currency;
+  offer.price = event.params.price;
+  offer.tokenContract = event.params.tokenContract;
+  offer.tokenId = event.params.tokenId;
+  offer.save();
 }
 
-export function handleUpdatedGravatar(event: UpdatedGravatar): void {
-  let id = event.params.id.toHex()
-  let gravatar = Gravatar.load(id)
-  if (gravatar == null) {
-    gravatar = new Gravatar(id)
-  }
-  gravatar.owner = event.params.owner
-  gravatar.displayName = event.params.displayName
-  gravatar.imageUrl = event.params.imageUrl
-  gravatar.save()
+export function handleOfferWithdrawn(event: OfferWithdrawn): void {
+  let offer = new Offer(event.address.toHex() + '_' + event.params.offerId.toHex());
+  if (!offer) return;
+
+  offer.lastBlock = event.block.number;
+
+  offer.active = false;
+  offer.save();
+}
+
+export function handleOfferAccepted(event: OfferAccepted): void {
+  let offer = new Offer(event.address.toHex() + '_' + event.params.offerId.toHex());
+  if (!offer) return;
+
+  offer.lastBlock = event.block.number;
+
+  offer.active = false;
+  offer.buyer = event.params.buyer;
+  offer.save();
 }

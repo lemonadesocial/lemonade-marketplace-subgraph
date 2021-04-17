@@ -1,13 +1,13 @@
 {
-  "name": "lemonade-graph",
+  "name": "lemonade-marketplace-subgraph",
   "version": "0.1.0",
   "scripts": {
-    "create": "graph create lemonadesocial/Lemonade-Graph --node https://api.thegraph.com/deploy/",
-    "create-local": "graph create lemonadesocial/Lemonade-Graph --node http://127.0.0.1:8020",
+    "create": "graph create lemonadesocial/lemonade-marketplace-subgraph --node https://api.thegraph.com/deploy/",
+    "create-local": "graph create lemonadesocial/lemonade-marketplace-subgraph --node http://127.0.0.1:8020",
     "codegen": "graph codegen",
     "build": "graph build",
-    "deploy": "graph deploy lemonadesocial/Lemonade-Graph --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/",
-    "deploy-local": "graph deploy lemonadesocial/Lemonade-Graph --ipfs http://localhost:5001 --node http://127.0.0.1:8020"
+    "deploy": "graph deploy lemonadesocial/lemonade-marketplace-subgraph --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/",
+    "deploy-local": "graph deploy lemonadesocial/lemonade-marketplace-subgraph --ipfs http://localhost:5001 --node http://127.0.0.1:8020"
   },
   "devDependencies": {
     "@graphprotocol/graph-cli": "^0.20.0",
