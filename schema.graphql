@@ -55,8 +55,7 @@ type Token @entity {
   owner: Bytes
 
   tokenId: BigInt!
-  tokenURI: String!
-
+  uri: String!
 
   orders: [Order!]! @derivedFrom(field: "token")
   transfers: [Transfer!]! @derivedFrom(field: "token")

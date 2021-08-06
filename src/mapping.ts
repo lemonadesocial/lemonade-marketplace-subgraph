@@ -107,7 +107,7 @@ export function handleTransfer(event: TransferEvent): void {
     token.contract = event.address;
 
     token.tokenId = event.params.tokenId;
-    token.tokenURI = tokenURI.value;
+    token.uri = tokenURI.value;
   }
 
   if (event.params.from.equals(ZERO_ADDRESS)) {
