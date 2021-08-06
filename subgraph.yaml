@@ -18,8 +18,6 @@ dataSources:
       abis:
         - name: ERC20
           file: ./abis/ERC20.json
-        - name: ERC721Metadata
-          file: ./abis/ERC721Metadata.json
         - name: LemonadeMarketplace
           file: ./abis/LemonadeMarketplace.json
       eventHandlers:
@@ -31,4 +29,22 @@ dataSources:
           handler: handleOrderFilled
         - event: OrderCancelled(indexed uint256)
           handler: handleOrderCancelled
+      file: ./src/mapping.ts
+  - kind: ethereum/contract
+    name: ERC721Metadata
+    network: mumbai
+    source:
+      abi: ERC721Metadata
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.4
+      language: wasm/assemblyscript
+      entities:
+        - Token
+      abis:
+        - name: ERC721Metadata
+          file: ./abis/ERC721Metadata.json
+      eventHandlers:
+        - event: Transfer(indexed address,indexed address,indexed uint256)
+          handler: handleTransfer
       file: ./src/mapping.ts
