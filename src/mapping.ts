@@ -28,9 +28,9 @@ export function handleOrderCreated(event: OrderCreated): void {
 
   switch (event.params.kind) {
     case 0:
-      order.kind = 'Direct'; break;
+      order.kind = 'DIRECT'; break;
     case 1:
-      order.kind = 'Auction'; break;
+      order.kind = 'AUCTION'; break;
   }
 
   order.open = true;

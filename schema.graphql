@@ -1,6 +1,6 @@
 enum OrderKind {
-  Direct
-  Auction
+  DIRECT
+  AUCTION
 }
 
 type Order @entity {
