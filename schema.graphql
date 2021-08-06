@@ -6,22 +6,19 @@ enum OrderKind {
 type Order @entity {
   id: ID!
   lastBlock: BigInt!
-  createdAt: BigInt!
-  orderContract: Bytes!
+
+  contract: Bytes!
   orderId: BigInt!
+  createdAt: BigInt!
 
   kind: OrderKind!
   open: Boolean!
   openFrom: BigInt
   openTo: BigInt
   maker: Bytes!
-  currencyContract: Bytes!
-  currencyName: String!
-  currencySymbol: String!
+  currency: Currency!
   price: BigInt!
-  tokenContract: Bytes!
-  tokenId: BigInt!
-  tokenURI: String!
+  token: Token!
   bidder: Bytes
   bidAmount: BigInt
   taker: Bytes
@@ -30,11 +27,46 @@ type Order @entity {
   bids: [Bid!]! @derivedFrom(field: "order")
 }
 
+type Currency @entity {
+  id: ID!
+
+  name: String!
+  symbol: String!
+
+  orders: [Order!]! @derivedFrom(field: "currency")
+}
+
 type Bid @entity {
   id: ID!
-  createdAt: BigInt!
+
   order: Order!
+  createdAt: BigInt!
 
   bidder: Bytes!
   bidAmount: BigInt!
+}
+
+type Token @entity {
+  id: ID!
+
+  contract: Bytes!
+  createdAt: BigInt
+  creator: Bytes
+  owner: Bytes
+
+  tokenId: BigInt!
+  tokenURI: String!
+
+
+  orders: [Order!]! @derivedFrom(field: "token")
+  transfers: [Transfer!]! @derivedFrom(field: "token")
+}
+
+type Transfer @entity {
+  id: ID!
+  createdAt: BigInt!
+
+  from: Bytes!
+  to: Bytes!
+  token: Token!
 }
