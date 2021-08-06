@@ -1,15 +1,40 @@
-type Offer @entity {
+enum OrderKind {
+  Direct
+  Auction
+}
+
+type Order @entity {
   id: ID!
   lastBlock: BigInt!
   createdAt: BigInt!
-  offerContract: Bytes!
-  offerId: BigInt!
+  orderContract: Bytes!
+  orderId: BigInt!
 
-  active: Boolean!
-  seller: Bytes!
-  currency: Bytes!
+  kind: OrderKind!
+  open: Boolean!
+  openFrom: BigInt
+  openTo: BigInt
+  maker: Bytes!
+  currencyContract: Bytes!
+  currencyName: String!
+  currencySymbol: String!
   price: BigInt!
   tokenContract: Bytes!
   tokenId: BigInt!
-  buyer: Bytes
+  tokenURI: String!
+  bidder: Bytes
+  bidAmount: BigInt
+  taker: Bytes
+  paidAmount: BigInt
+
+  bids: [Bid!]! @derivedFrom(field: "order")
+}
+
+type Bid @entity {
+  id: ID!
+  createdAt: BigInt!
+  order: Order!
+
+  bidder: Bytes!
+  bidAmount: BigInt!
 }
