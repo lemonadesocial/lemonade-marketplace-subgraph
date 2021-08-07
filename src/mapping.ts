@@ -35,11 +35,11 @@ export function handleOrderCreated(event: OrderCreated): void {
 
   order.open = true;
 
-  if (event.params.openFrom) {
+  if (!event.params.openFrom.isZero()) {
     order.openFrom = event.params.openFrom;
   }
 
-  if (event.params.openTo) {
+  if (!event.params.openTo.isZero()) {
     order.openTo = event.params.openTo;
   }
 
