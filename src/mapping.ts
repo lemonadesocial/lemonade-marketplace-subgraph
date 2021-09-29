@@ -110,12 +110,14 @@ export function handleTransfer(event: TransferEvent): void {
     token.uri = tokenURI.value;
   }
 
-  if (event.params.from.equals(ZERO_ADDRESS)) {
+  if (event.params.from.equals(ZERO_ADDRESS)) { // mint
     token.createdAt = event.block.timestamp;
     token.creator = event.params.to;
     token.owner = event.params.to;
-  } else if (event.params.to.equals(ZERO_ADDRESS)) {
+  } else if (event.params.to.equals(ZERO_ADDRESS)) { // burn
     token.unset('owner');
+  } else { // transfer
+    token.owner = event.params.to;
   }
 
   token.save();
