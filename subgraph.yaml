@@ -11,7 +11,7 @@ dataSources:
       startBlock: 17284527
     mapping:
       kind: ethereum/events
-      apiVersion: 0.0.4
+      apiVersion: 0.0.5
       language: wasm/assemblyscript
       entities:
         - Order
@@ -37,7 +37,7 @@ dataSources:
       abi: ERC721Metadata
     mapping:
       kind: ethereum/events
-      apiVersion: 0.0.4
+      apiVersion: 0.0.5
       language: wasm/assemblyscript
       entities:
         - Token
