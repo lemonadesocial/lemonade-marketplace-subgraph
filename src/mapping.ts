@@ -86,7 +86,7 @@ export function handleOrderFilled(event: OrderFilled): void {
 }
 
 export function handleOrderCancelled(event: OrderCancelled): void {
-  let order = new Order(event.address.toHex() + '-' + event.params.orderId.toString());
+  let order = Order.load(event.address.toHex() + '-' + event.params.orderId.toString());
 
   if (!order) return;
 
