@@ -1,6 +1,6 @@
 # Lemonade Marketplace Subgraph
 
-This repository contains a subgraph for The Graph to index our Lemonade Marketplace as well as any ERC721 transfer.
+This repository contains a subgraph for The Graph to index the Lemonade Marketplace as well as any ERC721 transfer.
 
 ## Install
 
