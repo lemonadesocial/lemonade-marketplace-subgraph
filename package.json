@@ -2,10 +2,11 @@
   "name": "lemonade-marketplace-subgraph",
   "license": "UNLICENSED",
   "scripts": {
+    "prepare:testnet": "ln -fs subgraph.testnet.yaml subgraph.yaml",
     "codegen": "graph codegen",
     "build": "graph build",
-    "deploy": "graph deploy --node https://api.studio.thegraph.com/deploy/ lemonade-marketplace",
-    "deploy:legacy": "graph deploy --product hosted-service lemonadesocial/lemonade-marketplace",
+    "deploy:testnet": "yarn prepare:testnet && graph deploy --node https://api.studio.thegraph.com/deploy/ lemonade-marketplace-testnet",
+    "deploy:testnet:legacy": "yarn prepare:testnet && graph deploy --product hosted-service lemonadesocial/lemonade-marketplace-testnet",
     "create-local": "graph create --node http://localhost:8020/ lemonade-marketplace",
     "remove-local": "graph remove --node http://localhost:8020/ lemonade-marketplace",
     "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 lemonade-marketplace"
