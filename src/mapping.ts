@@ -31,6 +31,8 @@ export function handleOrderCreated(event: OrderCreated): void {
       order.kind = 'DIRECT'; break;
     case 1:
       order.kind = 'AUCTION'; break;
+    default:
+      return;
   }
 
   order.open = true;
