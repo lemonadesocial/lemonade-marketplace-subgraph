@@ -48,3 +48,6 @@ dataSources:
         - event: Transfer(indexed address,indexed address,indexed uint256)
           handler: handleTransfer
       file: ./src/mapping.ts
+graft:
+  base: QmbmqRcXvwYgdsAa5GyKuWqFHAenXMSRNZHbdAJkVxRUou
+  block: 20574153
