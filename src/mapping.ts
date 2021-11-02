@@ -3,6 +3,7 @@ import { Address } from "@graphprotocol/graph-ts";
 import { Bid, Currency, Order, Token, Transfer } from '../generated/schema'
 import { ERC20 } from '../generated/LemonadeMarketplace/ERC20'
 import { IERC721Metadata, Transfer as TransferEvent } from '../generated/IERC721Metadata/IERC721Metadata'
+import { IERC721Royalty } from '../generated/IERC721Metadata/IERC721Royalty'
 import { OrderCreated, OrderBid, OrderCancelled, OrderFilled } from '../generated/LemonadeMarketplace/LemonadeMarketplace';
 
 let ZERO_ADDRESS = Address.zero();
@@ -110,6 +111,13 @@ export function handleTransfer(event: TransferEvent): void {
 
     token.tokenId = event.params.tokenId;
     token.uri = tokenURI.value;
+
+    let royalty = IERC721Royalty.bind(event.address).try_royalty(event.params.tokenId);
+
+    if (!royalty.reverted) {
+      token.royaltyMaker = royalty.value.value0;
+      token.royaltyFraction = royalty.value.value1;
+    }
   }
 
   if (event.params.from.equals(ZERO_ADDRESS)) { // mint

@@ -44,10 +44,12 @@ dataSources:
       abis:
         - name: IERC721Metadata
           file: ./abis/IERC721Metadata.json
+        - name: IERC721Royalty
+          file: ./abis/IERC721Royalty.json
       eventHandlers:
         - event: Transfer(indexed address,indexed address,indexed uint256)
           handler: handleTransfer
       file: ./src/mapping.ts
 graft:
-  base: QmemtLYcsVRYaFsxhrA7hmGNmUeyjLUadANvJcH3HfvEnM
-  block: 20736714
+  base: QmWtdfebCQy9vXxxb9qkenmxhnMe8sZYfxQP4nFt8Um2fw
+  block: 20967445

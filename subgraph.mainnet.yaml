@@ -16,6 +16,8 @@ dataSources:
       abis:
         - name: IERC721Metadata
           file: ./abis/IERC721Metadata.json
+        - name: IERC721Royalty
+          file: ./abis/IERC721Royalty.json
       eventHandlers:
         - event: Transfer(indexed address,indexed address,indexed uint256)
           handler: handleTransfer

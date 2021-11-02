@@ -56,6 +56,8 @@ type Token @entity {
 
   tokenId: BigInt!
   uri: String!
+  royaltyMaker: Bytes
+  royaltyFraction: BigInt
 
   orders: [Order!]! @derivedFrom(field: "token")
   transfers: [Transfer!]! @derivedFrom(field: "token")
