@@ -31,10 +31,10 @@ dataSources:
           handler: handleOrderCancelled
       file: ./src/mapping.ts
   - kind: ethereum/contract
-    name: ERC721Metadata
+    name: IERC721Metadata
     network: mumbai
     source:
-      abi: ERC721Metadata
+      abi: IERC721Metadata
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.5
@@ -42,8 +42,8 @@ dataSources:
       entities:
         - Token
       abis:
-        - name: ERC721Metadata
-          file: ./abis/ERC721Metadata.json
+        - name: IERC721Metadata
+          file: ./abis/IERC721Metadata.json
       eventHandlers:
         - event: Transfer(indexed address,indexed address,indexed uint256)
           handler: handleTransfer

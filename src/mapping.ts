@@ -2,7 +2,7 @@ import { Address } from "@graphprotocol/graph-ts";
 
 import { Bid, Currency, Order, Token, Transfer } from '../generated/schema'
 import { ERC20 } from '../generated/LemonadeMarketplace/ERC20'
-import { ERC721Metadata, Transfer as TransferEvent } from '../generated/ERC721Metadata/ERC721Metadata'
+import { IERC721Metadata, Transfer as TransferEvent } from '../generated/IERC721Metadata/IERC721Metadata'
 import { OrderCreated, OrderBid, OrderCancelled, OrderFilled } from '../generated/LemonadeMarketplace/LemonadeMarketplace';
 
 let ZERO_ADDRESS = Address.fromHexString('0x0000000000000000000000000000000000000000');
@@ -101,7 +101,7 @@ export function handleTransfer(event: TransferEvent): void {
   let token = Token.load(tokenID);
 
   if (!token) {
-    let tokenURI = ERC721Metadata.bind(event.address).try_tokenURI(event.params.tokenId);
+    let tokenURI = IERC721Metadata.bind(event.address).try_tokenURI(event.params.tokenId);
 
     if (tokenURI.reverted) return;
 
