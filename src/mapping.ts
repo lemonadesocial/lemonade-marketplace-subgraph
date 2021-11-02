@@ -5,7 +5,7 @@ import { ERC20 } from '../generated/LemonadeMarketplace/ERC20'
 import { IERC721Metadata, Transfer as TransferEvent } from '../generated/IERC721Metadata/IERC721Metadata'
 import { OrderCreated, OrderBid, OrderCancelled, OrderFilled } from '../generated/LemonadeMarketplace/LemonadeMarketplace';
 
-let ZERO_ADDRESS = Address.fromHexString('0x0000000000000000000000000000000000000000');
+let ZERO_ADDRESS = Address.zero();
 
 export function handleOrderCreated(event: OrderCreated): void {
   let currencyID = event.params.currency.toHex();
