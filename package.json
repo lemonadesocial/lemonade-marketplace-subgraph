@@ -1,6 +1,6 @@
 {
   "name": "lemonade-marketplace-subgraph",
-  "license": "UNLICENSED",
+  "version": "1.0.0",
   "scripts": {
     "prepare:testnet": "ln -fs subgraph.testnet.yaml subgraph.yaml",
     "prepare:mainnet": "ln -fs subgraph.mainnet.yaml subgraph.yaml",
@@ -17,5 +17,8 @@
   "dependencies": {
     "@graphprotocol/graph-cli": "^0.22.3",
     "@graphprotocol/graph-ts": "^0.22.1"
+  },
+  "devDependencies": {
+    "standard-version": "^9.3.2"
   }
 }
