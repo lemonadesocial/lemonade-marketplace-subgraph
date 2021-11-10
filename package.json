@@ -2,10 +2,13 @@
   "name": "lemonade-marketplace-subgraph",
   "version": "1.0.0",
   "scripts": {
+    "prepare:demo": "ln -fs subgraph.demo.yaml subgraph.yaml",
     "prepare:testnet": "ln -fs subgraph.testnet.yaml subgraph.yaml",
     "prepare:mainnet": "ln -fs subgraph.mainnet.yaml subgraph.yaml",
     "codegen": "graph codegen",
     "build": "graph build",
+    "deploy:demo": "yarn prepare:demo && graph deploy --node https://api.studio.thegraph.com/deploy/ lemonade-marketplace-demo",
+    "deploy:demo:legacy": "yarn prepare:demo && graph deploy --product hosted-service lemonadesocial/lemonade-marketplace-demo",
     "deploy:testnet": "yarn prepare:testnet && graph deploy --node https://api.studio.thegraph.com/deploy/ lemonade-marketplace-testnet",
     "deploy:testnet:legacy": "yarn prepare:testnet && graph deploy --product hosted-service lemonadesocial/lemonade-marketplace-testnet",
     "deploy:mainnet": "yarn prepare:mainnet && graph deploy --node https://api.studio.thegraph.com/deploy/ lemonade-marketplace-mainnet",
