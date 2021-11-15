@@ -94,15 +94,16 @@ export function handleTransfer(event: TransferEvent): void {
   let token = Token.load(tokenID);
 
   if (!token) {
-    let tokenURI = IERC721Metadata.bind(event.address).try_tokenURI(event.params.tokenId);
-
-    if (tokenURI.reverted) return;
-
     token = new Token(tokenID);
     token.contract = event.address;
 
     token.tokenId = event.params.tokenId;
-    token.uri = tokenURI.value;
+
+    let tokenURI = IERC721Metadata.bind(event.address).try_tokenURI(event.params.tokenId);
+
+    if (!tokenURI.reverted) {
+      token.uri = tokenURI.value;
+    }
 
     let royalty = IERC721Royalty.bind(event.address).try_royalty(event.params.tokenId);
 

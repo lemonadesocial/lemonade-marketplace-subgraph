@@ -55,7 +55,7 @@ type Token @entity {
   owner: Bytes
 
   tokenId: BigInt!
-  uri: String!
+  uri: String
   royaltyMaker: Bytes
   royaltyFraction: BigInt
 
