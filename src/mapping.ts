@@ -134,6 +134,7 @@ export function handleTransfer(event: TransferEvent): void {
 
   let transfer = new Transfer(event.transaction.hash.toHex() + '-' + event.logIndex.toString());
   transfer.createdAt = event.block.timestamp;
+  transfer.transaction = event.transaction.hash;
 
   transfer.from = event.params.from;
   transfer.to = event.params.to;

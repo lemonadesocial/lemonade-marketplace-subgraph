@@ -66,6 +66,7 @@ type Token @entity {
 type Transfer @entity {
   id: ID!
   createdAt: BigInt!
+  transaction: Bytes!
 
   from: Bytes!
   to: Bytes!
