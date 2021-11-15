@@ -1,6 +1,7 @@
 import { Address } from '@graphprotocol/graph-ts';
 
 import { fetchCurrency } from './currency';
+import { fetchRegistry } from './registry';
 
 import { Bid, Order, Token, Transfer } from '../generated/schema'
 import { IERC721Metadata, Transfer as TransferEvent } from '../generated/IERC721Metadata/IERC721Metadata'
@@ -90,26 +91,34 @@ export function handleOrderCancelled(event: OrderCancelled): void {
 }
 
 export function handleTransfer(event: TransferEvent): void {
+  let registry = fetchRegistry(event.address);
+
+  if (!registry.isERC721) return;
+
   let tokenID = event.address.toHex() + '-' + event.params.tokenId.toString();
   let token = Token.load(tokenID);
 
   if (!token) {
     token = new Token(tokenID);
+    token.registry = registry.id;
     token.contract = event.address;
-
     token.tokenId = event.params.tokenId;
 
-    let tokenURI = IERC721Metadata.bind(event.address).try_tokenURI(event.params.tokenId);
+    if (registry.supportsMetadata) {
+      let tokenURI = IERC721Metadata.bind(event.address).try_tokenURI(event.params.tokenId);
 
-    if (!tokenURI.reverted) {
-      token.uri = tokenURI.value;
+      if (!tokenURI.reverted) {
+        token.uri = tokenURI.value;
+      }
     }
 
-    let royalty = IERC721Royalty.bind(event.address).try_royalty(event.params.tokenId);
+    if (registry.supportsRoyalty) {
+      let royalty = IERC721Royalty.bind(event.address).try_royalty(event.params.tokenId);
 
-    if (!royalty.reverted) {
-      token.royaltyMaker = royalty.value.value0;
-      token.royaltyFraction = royalty.value.value1;
+      if (!royalty.reverted) {
+        token.royaltyMaker = royalty.value.value0;
+        token.royaltyFraction = royalty.value.value1;
+      }
     }
   }
 

@@ -43,6 +43,8 @@ dataSources:
       entities:
         - Token
       abis:
+        - name: IERC165
+          file: ./abis/IERC165.json
         - name: IERC721Metadata
           file: ./abis/IERC721Metadata.json
         - name: IERC721Royalty

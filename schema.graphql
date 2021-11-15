@@ -46,18 +46,31 @@ type Bid @entity {
   bidAmount: BigInt!
 }
 
+type Registry @entity {
+  id: ID!
+  isERC721: Boolean!
+
+  name: String
+  symbol: String
+  supportsMetadata: Boolean
+  supportsRoyalty: Boolean
+
+  tokens: [Token!]! @derivedFrom(field: "registry")
+}
+
 type Token @entity {
   id: ID!
 
+  registry: Registry!
   contract: Bytes!
-  createdAt: BigInt
-  creator: Bytes
-  owner: Bytes
-
   tokenId: BigInt!
   uri: String
   royaltyMaker: Bytes
   royaltyFraction: BigInt
+
+  createdAt: BigInt
+  creator: Bytes
+  owner: Bytes
 
   orders: [Order!]! @derivedFrom(field: "token")
   transfers: [Transfer!]! @derivedFrom(field: "token")
