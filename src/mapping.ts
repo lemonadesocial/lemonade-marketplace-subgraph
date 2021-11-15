@@ -1,7 +1,8 @@
-import { Address } from "@graphprotocol/graph-ts";
+import { Address } from '@graphprotocol/graph-ts';
 
-import { Bid, Currency, Order, Token, Transfer } from '../generated/schema'
-import { ERC20 } from '../generated/LemonadeMarketplace/ERC20'
+import { fetchCurrency } from './currency';
+
+import { Bid, Order, Token, Transfer } from '../generated/schema'
 import { IERC721Metadata, Transfer as TransferEvent } from '../generated/IERC721Metadata/IERC721Metadata'
 import { IERC721Royalty } from '../generated/IERC721Metadata/IERC721Royalty'
 import { OrderCreated, OrderBid, OrderCancelled, OrderFilled } from '../generated/LemonadeMarketplace/LemonadeMarketplace';
@@ -9,16 +10,7 @@ import { OrderCreated, OrderBid, OrderCancelled, OrderFilled } from '../generate
 let ZERO_ADDRESS = Address.zero();
 
 export function handleOrderCreated(event: OrderCreated): void {
-  let currencyID = event.params.currency.toHex();
-
-  if (!Currency.load(currencyID)) {
-    let erc20 = ERC20.bind(event.params.currency);
-
-    let currency = new Currency(currencyID);
-    currency.name = erc20.name();
-    currency.symbol = erc20.symbol();
-    currency.save();
-  }
+  let currency = fetchCurrency(event.params.currency)
 
   let order = new Order(event.address.toHex() + '-' + event.params.orderId.toString());
   order.lastBlock = event.block.number;
@@ -47,7 +39,7 @@ export function handleOrderCreated(event: OrderCreated): void {
   }
 
   order.maker = event.params.maker;
-  order.currency = currencyID;
+  order.currency = currency.id;
   order.price = event.params.price;
   order.token = event.params.tokenContract.toHex() + '-' + event.params.tokenId.toString();
   order.save();

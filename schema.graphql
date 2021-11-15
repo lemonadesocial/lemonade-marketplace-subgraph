@@ -30,8 +30,8 @@ type Order @entity {
 type Currency @entity {
   id: ID!
 
-  name: String!
-  symbol: String!
+  name: String
+  symbol: String
 
   orders: [Order!]! @derivedFrom(field: "currency")
 }
