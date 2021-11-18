@@ -42,6 +42,7 @@ type Bid @entity {
 
   order: Order!
   createdAt: BigInt!
+  transaction: Bytes!
 
   bidder: Bytes!
   bidAmount: BigInt!

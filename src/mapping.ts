@@ -61,6 +61,7 @@ export function handleOrderBid(event: OrderBid): void {
   let bid = new Bid(event.transaction.hash.toHex() + '-' + event.logIndex.toString());
   bid.order = order.id;
   bid.createdAt = event.block.timestamp;
+  bid.transaction = event.transaction.hash;
 
   bid.bidder = event.params.bidder;
   bid.bidAmount = event.params.bidAmount;
