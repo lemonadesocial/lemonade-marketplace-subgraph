@@ -19,6 +19,7 @@ export function handleOrderCreated(event: OrderCreated): void {
   order.contract = event.address;
   order.orderId = event.params.orderId;
   order.createdAt = event.block.timestamp;
+  order.transaction = event.transaction.hash;
 
   switch (event.params.kind) {
     case 0:
