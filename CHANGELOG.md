@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/compare/v1.0.0...v2.0.0) (2021-11-18)
+
+
+### ⚠ BREAKING CHANGES
+
+* **registry:** add registry to track erc721 and metadata and royalty support
+
+### Features
+
+* **bid:** add transaction ([09d63bd](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/commit/09d63bd184e2bcb9bc84192d3011170ccb7f58f2))
+* **order:** add transaction ([9f7eff9](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/commit/9f7eff92ec654d4d18b99bc5cc2d339c3f0521d9))
+* **registry:** add registry to track erc721 and metadata and royalty support ([999ec52](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/commit/999ec524213b7e11bc91c03ac7f020af39071559))
+* **token:** add support for royalties ([47b8d38](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/commit/47b8d387e2db01104b001e63c4e3bb39b2386f05))
+* **transfer:** add transaction ([93467a0](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/commit/93467a014c5766c88c57465026368f7f0429e4e4))
+
 ## 1.0.0 (2021-11-02)
 
 
