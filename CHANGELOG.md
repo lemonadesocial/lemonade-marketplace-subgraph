@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.0.0](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/compare/v2.0.0...v3.0.0) (2021-11-22)
+
+
+### ⚠ BREAKING CHANGES
+
+* **token:** remove token uri and royalty rpc calls
+
+### Features
+
+* **token:** remove token uri and royalty rpc calls ([552926c](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/commit/552926ccc7f06c042991fe5d4a98b0d3389b0285))
+
 ## [2.0.0](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/compare/v1.0.0...v2.0.0) (2021-11-18)
 
 
