@@ -4,9 +4,8 @@ import { fetchCurrency } from './currency';
 import { fetchRegistry } from './registry';
 
 import { Bid, Order, Token, Transfer } from '../generated/schema'
-import { IERC721Metadata, Transfer as TransferEvent } from '../generated/IERC721Metadata/IERC721Metadata'
-import { IERC721Royalty } from '../generated/IERC721Metadata/IERC721Royalty'
 import { OrderCreated, OrderBid, OrderCancelled, OrderFilled } from '../generated/LemonadeMarketplace/LemonadeMarketplace';
+import { Transfer as TransferEvent } from '../generated/IERC721/IERC721'
 
 let ZERO_ADDRESS = Address.zero();
 
@@ -105,23 +104,6 @@ export function handleTransfer(event: TransferEvent): void {
     token.registry = registry.id;
     token.contract = event.address;
     token.tokenId = event.params.tokenId;
-
-    if (registry.supportsMetadata) {
-      let tokenURI = IERC721Metadata.bind(event.address).try_tokenURI(event.params.tokenId);
-
-      if (!tokenURI.reverted) {
-        token.uri = tokenURI.value;
-      }
-    }
-
-    if (registry.supportsRoyalty) {
-      let royalty = IERC721Royalty.bind(event.address).try_royalty(event.params.tokenId);
-
-      if (!royalty.reverted) {
-        token.royaltyMaker = royalty.value.value0;
-        token.royaltyFraction = royalty.value.value1;
-      }
-    }
   }
 
   if (event.params.from.equals(ZERO_ADDRESS)) { // mint

@@ -52,11 +52,6 @@ type Registry @entity {
   id: ID!
   isERC721: Boolean!
 
-  name: String
-  symbol: String
-  supportsMetadata: Boolean
-  supportsRoyalty: Boolean
-
   tokens: [Token!]! @derivedFrom(field: "registry")
 }
 
@@ -66,9 +61,6 @@ type Token @entity {
   registry: Registry!
   contract: Bytes!
   tokenId: BigInt!
-  uri: String
-  royaltyMaker: Bytes
-  royaltyFraction: BigInt
 
   createdAt: BigInt
   creator: Bytes
