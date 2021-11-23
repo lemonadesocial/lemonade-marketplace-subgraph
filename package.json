@@ -8,8 +8,11 @@
     "codegen": "graph codegen",
     "build": "graph build",
     "deploy-legacy:demo": "yarn prepare:demo && graph deploy --product hosted-service lemonadesocial/lemonade-marketplace-demo",
+    "deploy-legacy:demo-backup": "yarn prepare:demo && graph deploy --product hosted-service lemonadesocial/lemonade-marketplace-demo-backup",
     "deploy-legacy:mainnet": "yarn prepare:mainnet && graph deploy --product hosted-service lemonadesocial/lemonade-marketplace-mainnet",
+    "deploy-legacy:mainnet-backup": "yarn prepare:mainnet && graph deploy --product hosted-service lemonadesocial/lemonade-marketplace-mainnet-backup",
     "deploy-legacy:testnet": "yarn prepare:testnet && graph deploy --product hosted-service lemonadesocial/lemonade-marketplace-testnet",
+    "deploy-legacy:testnet-backup": "yarn prepare:testnet && graph deploy --product hosted-service lemonadesocial/lemonade-marketplace-testnet-backup",
     "create-local": "graph create --node http://localhost:8020/ lemonade-marketplace",
     "remove-local": "graph remove --node http://localhost:8020/ lemonade-marketplace",
     "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 lemonade-marketplace"
