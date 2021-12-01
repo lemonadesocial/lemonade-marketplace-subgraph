@@ -6,7 +6,6 @@ dataSources:
     name: LemonadeMarketplace
     network: mumbai
     source:
-      address: '0xbc6C027B7F0CA2BEb0d71E479a05758187d4ea63'
       abi: LemonadeMarketplace
       startBlock: 21035765
     mapping:
@@ -51,5 +50,5 @@ dataSources:
           handler: handleTransfer
       file: ./src/mapping.ts
 graft:
-  base: QmQAUNa9qzQC2SbBhBw1MBd6vGtG7ayYUK3y7PPejHX8VJ
-  block: 21789111
+  base: QmbC87izcg57rVPAGpZUknsLh6BnwMp9zD7S1mMNuARHEE
+  block: 22094096

@@ -6,7 +6,6 @@ dataSources:
     name: LemonadeMarketplace
     network: matic
     source:
-      address: '0x71Deb1a1CfAe375ef779b8D4F39F145Ab07aA66c'
       abi: LemonadeMarketplace
       startBlock: 21479069
     mapping:
@@ -52,5 +51,5 @@ dataSources:
           handler: handleTransfer
       file: ./src/mapping.ts
 graft:
-  base: QmfYn6U3TNkoqjSarXbyRqijFgxVSZJQoS79YKvovsuMJM
-  block: 21674567
+  base: QmZ1ne3jQBz411VAY2jHow8QaxEjKpTvNU8VChB9UpCa9D
+  block: 22005772
