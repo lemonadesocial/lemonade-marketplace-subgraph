@@ -1,6 +1,6 @@
 {
   "name": "lemonade-marketplace-subgraph",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "scripts": {
     "prepare:demo": "ln -fs subgraph.demo.yaml subgraph.yaml",
     "prepare:testnet": "ln -fs subgraph.testnet.yaml subgraph.yaml",

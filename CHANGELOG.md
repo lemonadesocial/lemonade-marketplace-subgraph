@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.1.0](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/compare/v3.0.0...v3.1.0) (2021-12-01)
+
+
+### Features
+
+* index every LemonadeMarketplace regardless of address ([0b2b91b](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/commit/0b2b91b748be3a754f575cec5331302f5e41d6f4))
+
 ## [3.0.0](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/compare/v2.0.0...v3.0.0) (2021-11-22)
 
 
