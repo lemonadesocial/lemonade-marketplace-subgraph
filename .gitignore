@@ -1,6 +1,7 @@
 build/
 generated/
 node_modules/
+subgraph.backup.yaml
 subgraph.yaml
 yarn-debug.log*
 yarn-error.log*
