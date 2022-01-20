@@ -51,5 +51,5 @@ dataSources:
           handler: handleTransfer
       file: ./src/mapping.ts
 graft:
-  base: QmZ1ne3jQBz411VAY2jHow8QaxEjKpTvNU8VChB9UpCa9D
-  block: 22005772
+  base: QmUccq2jeD61VsExEeDPmrgxfmCiyjaHcooWe5S4UknyuP
+  block: 23952320
