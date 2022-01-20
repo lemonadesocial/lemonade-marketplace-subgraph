@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.2.0](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/compare/v3.1.0...v3.2.0) (2022-01-20)
+
+
+### Features
+
+* **token:** use transaction from instead of transfer to as creator ([47bb6b5](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/commit/47bb6b52221c45a6aa2547956959936cf6460260))
+
 ## [3.1.0](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/compare/v3.0.0...v3.1.0) (2021-12-01)
 
 
