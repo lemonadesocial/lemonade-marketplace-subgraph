@@ -11,6 +11,8 @@ type Order @entity {
   orderId: BigInt!
   createdAt: BigInt!
   transaction: Bytes!
+  updatedAt: BigInt
+  updatedTransaction: Bytes
 
   kind: OrderKind!
   open: Boolean!

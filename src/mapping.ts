@@ -53,6 +53,9 @@ export function handleOrderBid(event: OrderBid): void {
 
   order.lastBlock = event.block.number;
 
+  order.updatedAt = event.block.timestamp;
+  order.updatedTransaction = event.transaction.hash;
+
   order.bidder = event.params.bidder;
   order.bidAmount = event.params.bidAmount;
   order.save();
@@ -74,6 +77,9 @@ export function handleOrderFilled(event: OrderFilled): void {
 
   order.lastBlock = event.block.number;
 
+  order.updatedAt = event.block.timestamp;
+  order.updatedTransaction = event.transaction.hash;
+
   order.open = false;
   order.taker = event.params.taker;
   order.paidAmount = event.params.paidAmount;
@@ -86,6 +92,9 @@ export function handleOrderCancelled(event: OrderCancelled): void {
   if (!order) return;
 
   order.lastBlock = event.block.number;
+
+  order.updatedAt = event.block.timestamp;
+  order.updatedTransaction = event.transaction.hash;
 
   order.open = false;
   order.save();
