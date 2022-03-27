@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.3.0](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/compare/v3.2.0...v3.3.0) (2022-03-27)
+
+
+### Features
+
+* **token:** add updated at and updated transaction ([ad0c77c](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/commit/ad0c77c143f6ff33afcc0f8f15e2d22dab318e26))
+* update deployments ([56ce405](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/commit/56ce40541f33ef0d5f763fbb677211e0ce90c8cc))
+
 ## [3.2.0](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/compare/v3.1.0...v3.2.0) (2022-01-20)
 
 
