@@ -7,6 +7,7 @@
     "build": "graph build",
     "deploy:demo": "yarn manifest demo && graph deploy --product hosted-service lemonadesocial/lemonade-marketplace-demo",
     "deploy:demo-backup": "yarn manifest demo && graph deploy --product hosted-service lemonadesocial/lemonade-marketplace-demo-backup subgraph.backup.yaml",
+    "deploy:ethereum": "yarn manifest ethereum && graph deploy --product hosted-service lemonadesocial/lemonade-marketplace-ethereum",
     "deploy:mainnet": "yarn manifest mainnet && graph deploy --product hosted-service lemonadesocial/lemonade-marketplace-mainnet",
     "deploy:mainnet-backup": "yarn manifest mainnet && graph deploy --product hosted-service lemonadesocial/lemonade-marketplace-mainnet-backup subgraph.backup.yaml",
     "deploy:rinkeby": "yarn manifest rinkeby && graph deploy --product hosted-service lemonadesocial/lemonade-marketplace-rinkeby",
