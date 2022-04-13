@@ -10,8 +10,7 @@
     "deploy:ethereum": "yarn manifest ethereum && graph deploy --product hosted-service lemonadesocial/lemonade-marketplace-ethereum",
     "deploy:matic": "yarn manifest matic && graph deploy --product hosted-service lemonadesocial/lemonade-marketplace-matic",
     "deploy:rinkeby": "yarn manifest rinkeby && graph deploy --product hosted-service lemonadesocial/lemonade-marketplace-rinkeby",
-    "deploy:testnet": "yarn manifest testnet && graph deploy --product hosted-service lemonadesocial/lemonade-marketplace-testnet",
-    "deploy:testnet-backup": "yarn manifest testnet && graph deploy --product hosted-service lemonadesocial/lemonade-marketplace-testnet-backup subgraph.backup.yaml",
+    "deploy:mumbai": "yarn manifest mumbai && graph deploy --product hosted-service lemonadesocial/lemonade-marketplace-mumbai",
     "create-local": "graph create --node http://localhost:8020/ lemonade-marketplace",
     "remove-local": "graph remove --node http://localhost:8020/ lemonade-marketplace",
     "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 lemonade-marketplace"
