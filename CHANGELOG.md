@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.5.0](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/compare/v3.4.0...v3.5.0) (2022-04-14)
+
+
+### Features
+
+* add ethereum chain ([553248b](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/commit/553248b6d92a802d36ead0de394232152add8050))
+* rename mainnet to matic ([41f481a](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/commit/41f481a75e508d5926d936292b7f2e8768a2fccf))
+* rename testnet to mumbai ([37ce68d](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/commit/37ce68d28dca54cd672763a7adb124a4f1b6990a))
+
 ## [3.4.0](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/compare/v3.3.0...v3.4.0) (2022-03-27)
 
 
