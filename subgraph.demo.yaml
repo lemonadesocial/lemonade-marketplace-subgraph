@@ -4,13 +4,13 @@ schema:
 dataSources:
   - kind: ethereum/contract
     name: LemonadeMarketplace
-    network: matic
+    network: moonbeam
     source:
       abi: LemonadeMarketplace
-      startBlock: 21479069
+      startBlock: 1154800
     mapping:
       kind: ethereum/events
-      apiVersion: 0.0.5
+      apiVersion: 0.0.6
       language: wasm/assemblyscript
       entities:
         - Order
@@ -31,13 +31,13 @@ dataSources:
       file: ./src/mapping.ts
   - kind: ethereum/contract
     name: IERC721
-    network: matic
+    network: moonbeam
     source:
       abi: IERC721
-      startBlock: 21479069
+      startBlock: 1154800
     mapping:
       kind: ethereum/events
-      apiVersion: 0.0.5
+      apiVersion: 0.0.6
       language: wasm/assemblyscript
       entities:
         - Token
@@ -50,6 +50,3 @@ dataSources:
         - event: Transfer(indexed address,indexed address,indexed uint256)
           handler: handleTransfer
       file: ./src/mapping.ts
-graft:
-  base: QmeBVJtJx8DXUof9Y2ThPYuHmaLhGkSAYvYZJzNZWv2MMt
-  block: 25688149
