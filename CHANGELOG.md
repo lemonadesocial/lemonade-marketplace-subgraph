@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.6.0](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/compare/v3.5.0...v3.6.0) (2022-06-03)
+
+
+### Features
+
+* add moonbase chain ([f172224](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/commit/f172224b8d4d67ca9cab36033f27366fdfc20f30))
+* add moonbeam chain ([578a4b4](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/commit/578a4b400add641b155533cb01c1db76594b1dda))
+* update demo subgraph to moonbeam chain ([a48699f](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/commit/a48699f1217d9804393dffa64a32d31da3917532))
+
 ## [3.5.0](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/compare/v3.4.0...v3.5.0) (2022-04-14)
 
 
