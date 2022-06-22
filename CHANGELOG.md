@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.7.0](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/compare/v3.6.0...v3.7.0) (2022-06-22)
+
+
+### Features
+
+* add aurora testnet, aurora, bnb, and bnb testnet chains ([43c644a](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/commit/43c644a0fcaea043ceefff313e5f63abdca34c92))
+
 ## [3.6.0](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/compare/v3.5.0...v3.6.0) (2022-06-03)
 
 
