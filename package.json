@@ -9,6 +9,7 @@
     "deploy:aurora": "yarn manifest aurora && graph deploy --product hosted-service lemonadesocial/lemonade-marketplace-aurora",
     "deploy:bnb-testnet": "yarn manifest bnb-testnet && graph deploy --product hosted-service lemonadesocial/lemonade-marketplace-bnb-testnet",
     "deploy:bnb": "yarn manifest bnb && graph deploy --product hosted-service lemonadesocial/lemonade-marketplace-bnb",
+    "deploy:demo-testnet": "yarn manifest demo-testnet && graph deploy --product hosted-service lemonadesocial/lemonade-marketplace-demo-testnet",
     "deploy:demo": "yarn manifest demo && graph deploy --product hosted-service lemonadesocial/lemonade-marketplace-demo",
     "deploy:ethereum": "yarn manifest ethereum && graph deploy --product hosted-service lemonadesocial/lemonade-marketplace-ethereum",
     "deploy:matic": "yarn manifest matic && graph deploy --product hosted-service lemonadesocial/lemonade-marketplace-matic",
