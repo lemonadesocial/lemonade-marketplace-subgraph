@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.8.0](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/compare/v3.7.0...v3.8.0) (2022-06-24)
+
+
+### Features
+
+* add demo testnet subgraph ([66eee6e](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/commit/66eee6e221364705597e758b0fa06e4fdb2e7797))
+* update demo subgraph to bnb chain ([812196a](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/commit/812196abdeb68fc8695f9112962d34dceb765ee0))
+
 ## [3.7.0](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/compare/v3.6.0...v3.7.0) (2022-06-22)
 
 
