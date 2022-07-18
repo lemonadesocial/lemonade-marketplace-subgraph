@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.9.0](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/compare/v3.8.0...v3.9.0) (2022-07-18)
+
+
+### Features
+
+* set null currency for zero address ([3f5b27c](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/commit/3f5b27ce02d063930a735991d13d1f88febbeb7b))
+* update deployments ([f8d6be4](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/commit/f8d6be4e3a69adbd5353398bed1d0d6750941573))
+
 ## [3.8.0](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/compare/v3.7.0...v3.8.0) (2022-06-24)
 
 
