@@ -3,7 +3,11 @@ import { Address } from '@graphprotocol/graph-ts';
 import { Currency } from '../generated/schema'
 import { IERC20Metadata } from '../generated/LemonadeMarketplace/IERC20Metadata'
 
-export function fetchCurrency(address: Address): Currency {
+let ZERO_ADDRESS = Address.zero();
+
+export function fetchCurrency(address: Address): Currency | null {
+  if (address.equals(ZERO_ADDRESS)) return null;
+
   let currencyID = address.toHex();
   let currency = Currency.load(currencyID)
 

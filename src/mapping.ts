@@ -40,7 +40,11 @@ export function handleOrderCreated(event: OrderCreated): void {
   }
 
   order.maker = event.params.maker;
-  order.currency = currency.id;
+
+  if (currency) {
+    order.currency = currency.id;
+  }
+
   order.price = event.params.price;
   order.token = event.params.tokenContract.toHex() + '-' + event.params.tokenId.toString();
   order.save();

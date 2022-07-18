@@ -19,7 +19,7 @@ type Order @entity {
   openFrom: BigInt
   openTo: BigInt
   maker: Bytes!
-  currency: Currency!
+  currency: Currency
   price: BigInt!
   token: Token!
   bidder: Bytes
