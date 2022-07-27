@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.10.0](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/compare/v3.9.0...v3.10.0) (2022-07-27)
+
+
+### Features
+
+* replace rinkeby by goerli ([53e5c71](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/commit/53e5c717bcea385f8fe7fd1488139593850285b4))
+
 ## [3.9.0](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/compare/v3.8.0...v3.9.0) (2022-07-18)
 
 
