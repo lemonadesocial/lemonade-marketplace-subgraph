@@ -4,10 +4,9 @@ schema:
 dataSources:
   - kind: ethereum/contract
     name: LemonadeMarketplace
-    network: rinkeby
+    network: goerli
     source:
       abi: LemonadeMarketplace
-      startBlock: 10399795
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.6
@@ -31,10 +30,9 @@ dataSources:
       file: ./src/mapping.ts
   - kind: ethereum/contract
     name: IERC721
-    network: rinkeby
+    network: goerli
     source:
       abi: IERC721
-      startBlock: 10399795
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.6
@@ -50,6 +48,3 @@ dataSources:
         - event: Transfer(indexed address,indexed address,indexed uint256)
           handler: handleTransfer
       file: ./src/mapping.ts
-graft:
-  base: QmWvcxSDdKv6Rh7AJkbkvH2A19pAQ12QVsGqbaSGRo3vjA
-  block: 11044936

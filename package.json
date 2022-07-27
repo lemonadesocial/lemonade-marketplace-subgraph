@@ -12,11 +12,11 @@
     "deploy:demo-testnet": "yarn manifest demo-testnet && graph deploy --product hosted-service lemonadesocial/lemonade-marketplace-demo-testnet",
     "deploy:demo": "yarn manifest demo && graph deploy --product hosted-service lemonadesocial/lemonade-marketplace-demo",
     "deploy:ethereum": "yarn manifest ethereum && graph deploy --product hosted-service lemonadesocial/lemonade-marketplace-ethereum",
+    "deploy:goerli": "yarn manifest goerli && graph deploy --product hosted-service lemonadesocial/lemonade-marketplace-goerli",
     "deploy:matic": "yarn manifest matic && graph deploy --product hosted-service lemonadesocial/lemonade-marketplace-matic",
     "deploy:moonbase": "yarn manifest moonbase && graph deploy --product hosted-service lemonadesocial/lemonade-marketplace-moonbase",
     "deploy:moonbeam": "yarn manifest moonbeam && graph deploy --product hosted-service lemonadesocial/lemonade-marketplace-moonbeam",
     "deploy:mumbai": "yarn manifest mumbai && graph deploy --product hosted-service lemonadesocial/lemonade-marketplace-mumbai",
-    "deploy:rinkeby": "yarn manifest rinkeby && graph deploy --product hosted-service lemonadesocial/lemonade-marketplace-rinkeby",
     "create-local": "graph create --node http://localhost:8020/ lemonade-marketplace",
     "remove-local": "graph remove --node http://localhost:8020/ lemonade-marketplace",
     "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 lemonade-marketplace"
