@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.11.0](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/compare/v3.10.0...v3.11.0) (2022-08-12)
+
+
+### Features
+
+* add arbitrum one and arbitrum rinkeby chains ([e782903](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/commit/e782903eea482f17f8cd3f7c08b0b6359bd4ccdc))
+
 ## [3.10.0](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/compare/v3.9.0...v3.10.0) (2022-07-27)
 
 
