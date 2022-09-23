@@ -7,7 +7,6 @@
     "build": "graph build",
     "deploy:arbitrum-goerli": "yarn manifest arbitrum-goerli && graph deploy --product hosted-service lemonadesocial/lemonade-arbitrum-goerli",
     "deploy:arbitrum-one": "yarn manifest arbitrum-one && graph deploy --product hosted-service lemonadesocial/lemonade-marketplace-arbitrum-one",
-    "deploy:arbitrum-rinkeby": "yarn manifest arbitrum-rinkeby && graph deploy --product hosted-service lemonadesocial/lemonade-marketplace-arbitrum-rinke",
     "deploy:aurora-testnet": "yarn manifest aurora-testnet && graph deploy --product hosted-service lemonadesocial/lemonade-marketplace-aurora-testnet",
     "deploy:aurora": "yarn manifest aurora && graph deploy --product hosted-service lemonadesocial/lemonade-marketplace-aurora",
     "deploy:bnb-testnet": "yarn manifest bnb-testnet && graph deploy --product hosted-service lemonadesocial/lemonade-marketplace-bnb-testnet",
