@@ -6,6 +6,7 @@
     "codegen": "graph codegen",
     "build": "graph build",
     "deploy:arbitrum-goerli": "yarn manifest arbitrum-goerli && graph deploy --product hosted-service lemonadesocial/lemonade-arbitrum-goerli",
+    "deploy:arbitrum-nova": "yarn manifest arbitrum-nova && graph deploy --node http://localhost:8020/ --ipfs http://localhost:9095 lemonade-arbitrum-nova",
     "deploy:arbitrum-one": "yarn manifest arbitrum-one && graph deploy --product hosted-service lemonadesocial/lemonade-marketplace-arbitrum-one",
     "deploy:aurora-testnet": "yarn manifest aurora-testnet && graph deploy --product hosted-service lemonadesocial/lemonade-marketplace-aurora-testnet",
     "deploy:aurora": "yarn manifest aurora && graph deploy --product hosted-service lemonadesocial/lemonade-marketplace-aurora",
