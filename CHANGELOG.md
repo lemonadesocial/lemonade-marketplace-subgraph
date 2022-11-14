@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.13.0](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/compare/v3.12.0...v3.13.0) (2022-11-14)
+
+
+### Features
+
+* add arbitrum nova chain ([ca5c104](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/commit/ca5c10491c6745f3843ed29dcf5117a38315f20e))
+
 ## [3.12.0](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/compare/v3.11.0...v3.12.0) (2022-09-23)
 
 
