@@ -20,6 +20,7 @@
     "deploy:moonbase": "yarn manifest moonbase && graph deploy --product hosted-service lemonadesocial/lemonade-marketplace-moonbase",
     "deploy:moonbeam": "yarn manifest moonbeam && graph deploy --product hosted-service lemonadesocial/lemonade-marketplace-moonbeam",
     "deploy:mumbai": "yarn manifest mumbai && graph deploy --product hosted-service lemonadesocial/lemonade-marketplace-mumbai",
+    "deploy:opal": "yarn manifest opal && graph deploy --node http://localhost:8020/ --ipfs http://localhost:9095 lemonade-marketplace-opal",
     "create-local": "graph create --node http://localhost:8020/ lemonade-marketplace",
     "remove-local": "graph remove --node http://localhost:8020/ lemonade-marketplace",
     "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 lemonade-marketplace"
