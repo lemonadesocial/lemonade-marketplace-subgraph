@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.15.0](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/compare/v3.14.0...v3.15.0) (2022-11-23)
+
+
+### Features
+
+* add sapphire chain ([e55931d](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/commit/e55931d1783e3bf92c34fe19c1ae671441943354))
+
 ## [3.14.0](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/compare/v3.13.0...v3.14.0) (2022-11-17)
 
 
