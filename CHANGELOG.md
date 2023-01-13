@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.17.0](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/compare/v3.16.0...v3.17.0) (2023-01-13)
+
+
+### Features
+
+* add optimism and optimism goerli chains ([2bc9fdb](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/commit/2bc9fdb560e4083a7af8d030d496f440ea4edff0))
+
 ## [3.16.0](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/compare/v3.15.0...v3.16.0) (2022-11-29)
 
 

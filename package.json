@@ -1,6 +1,6 @@
 {
   "name": "lemonade-marketplace-subgraph",
-  "version": "3.16.0",
+  "version": "3.17.0",
   "scripts": {
     "manifest": "sh scripts/manifest.sh",
     "codegen": "graph codegen",
