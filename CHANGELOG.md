@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.18.0](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/compare/v3.17.0...v3.18.0) (2023-01-23)
+
+
+### Features
+
+* add quartz chain ([d41d738](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/commit/d41d738e8856518d58b93d783f3249dd935a571e))
+
 ## [3.17.0](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/compare/v3.16.0...v3.17.0) (2023-01-13)
 
 
