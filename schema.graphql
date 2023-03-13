@@ -64,6 +64,7 @@ type Token @entity {
   tokenId: BigInt!
 
   createdAt: BigInt
+  createdBlock: BigInt
   creator: Bytes
   owner: Bytes
 
