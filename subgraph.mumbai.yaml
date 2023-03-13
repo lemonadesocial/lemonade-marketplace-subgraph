@@ -1,4 +1,4 @@
-specVersion: 0.0.2
+specVersion: 0.0.4
 schema:
   file: ./schema.graphql
 dataSources:
@@ -7,10 +7,9 @@ dataSources:
     network: mumbai
     source:
       abi: LemonadeMarketplace
-      startBlock: 21035765
     mapping:
       kind: ethereum/events
-      apiVersion: 0.0.5
+      apiVersion: 0.0.6
       language: wasm/assemblyscript
       entities:
         - Order
@@ -36,7 +35,7 @@ dataSources:
       abi: IERC721
     mapping:
       kind: ethereum/events
-      apiVersion: 0.0.5
+      apiVersion: 0.0.6
       language: wasm/assemblyscript
       entities:
         - Token
@@ -49,6 +48,3 @@ dataSources:
         - event: Transfer(indexed address,indexed address,indexed uint256)
           handler: handleTransfer
       file: ./src/mapping.ts
-graft:
-  base: QmULTzq7BsMusPNxp14nYFQBYY97hr5tmqYtEe4LVzM6c2
-  block: 27224107

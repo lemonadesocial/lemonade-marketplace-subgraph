@@ -1,4 +1,4 @@
-specVersion: 0.0.2
+specVersion: 0.0.4
 schema:
   file: ./schema.graphql
 dataSources:
@@ -48,6 +48,3 @@ dataSources:
         - event: Transfer(indexed address,indexed address,indexed uint256)
           handler: handleTransfer
       file: ./src/mapping.ts
-graft:
-  base: QmaRR2RqK7pLnd6MTAjDN6NHfBqsZAh1z6ZJn1k25VbGx1
-  block: 2509152

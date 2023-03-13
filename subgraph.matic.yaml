@@ -1,4 +1,4 @@
-specVersion: 0.0.2
+specVersion: 0.0.4
 schema:
   file: ./schema.graphql
 dataSources:
@@ -7,7 +7,6 @@ dataSources:
     network: matic
     source:
       abi: LemonadeMarketplace
-      startBlock: 21479069
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.6
@@ -49,6 +48,3 @@ dataSources:
         - event: Transfer(indexed address,indexed address,indexed uint256)
           handler: handleTransfer
       file: ./src/mapping.ts
-graft:
-  base: QmdgSk7svk712ZYG3ENytRvHZwhNPZbqroL5bfXufmCFcU
-  block: 30854115
