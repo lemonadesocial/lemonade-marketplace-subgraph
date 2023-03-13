@@ -29,7 +29,7 @@
     "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 lemonade-marketplace"
   },
   "dependencies": {
-    "@graphprotocol/graph-cli": "^0.27.0",
-    "@graphprotocol/graph-ts": "^0.25.0"
+    "@graphprotocol/graph-cli": "^0.42.4",
+    "@graphprotocol/graph-ts": "^0.29.3"
   }
 }
