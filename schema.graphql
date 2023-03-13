@@ -5,7 +5,6 @@ enum OrderKind {
 
 type Order @entity {
   id: ID!
-  lastBlock: BigInt!
 
   contract: Bytes!
   orderId: BigInt!

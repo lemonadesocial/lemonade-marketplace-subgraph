@@ -13,7 +13,6 @@ export function handleOrderCreated(event: OrderCreated): void {
   let currency = fetchCurrency(event.params.currency)
 
   let order = new Order(event.address.toHex() + '-' + event.params.orderId.toString());
-  order.lastBlock = event.block.number;
 
   order.contract = event.address;
   order.orderId = event.params.orderId;
@@ -55,8 +54,6 @@ export function handleOrderBid(event: OrderBid): void {
 
   if (!order) return;
 
-  order.lastBlock = event.block.number;
-
   order.updatedAt = event.block.timestamp;
   order.updatedTransaction = event.transaction.hash;
 
@@ -79,8 +76,6 @@ export function handleOrderFilled(event: OrderFilled): void {
 
   if (!order) return;
 
-  order.lastBlock = event.block.number;
-
   order.updatedAt = event.block.timestamp;
   order.updatedTransaction = event.transaction.hash;
 
@@ -94,8 +89,6 @@ export function handleOrderCancelled(event: OrderCancelled): void {
   let order = Order.load(event.address.toHex() + '-' + event.params.orderId.toString());
 
   if (!order) return;
-
-  order.lastBlock = event.block.number;
 
   order.updatedAt = event.block.timestamp;
   order.updatedTransaction = event.transaction.hash;
