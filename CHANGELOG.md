@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.19.0](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/compare/v3.18.0...v3.19.0) (2023-03-30)
+
+
+### Features
+
+* add astar, celo, gnosis and unique chains ([fe7e396](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/commit/fe7e396a28ab4af587ddd5d35025b5a14d4d0e03))
+* **deps:** upgrade dependencies ([9bea26f](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/commit/9bea26f25579969b9071dffa5d1b21fa93b0a8da))
+* **order:** remove last block ([0d25419](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/commit/0d2541952a8e5811d41096136390f4416396d66b))
+* rename matic to polygon chain ([86ad227](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/commit/86ad227b09606e7a31c6b185346988e97fbbc5e9))
+* **token:** add created block ([312a5ff](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/commit/312a5ff2536ad12b91a4514ed71db76d2783c099))
+* upgrade subgraphs ([2c54aa8](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/commit/2c54aa87853c86ad0ffcb0b6d63d2be4eae45b7e))
+
+
+### Reverts
+
+* Revert "feat: add quartz chain" ([545e681](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/commit/545e681bdaeb54a4c5e35b81947fbf0d403cd2a1))
+
 ## [3.18.0](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/compare/v3.17.0...v3.18.0) (2023-01-23)
 
 
