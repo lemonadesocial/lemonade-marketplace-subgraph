@@ -11,6 +11,7 @@
     "deploy:aurora-testnet": "yarn manifest aurora-testnet && graph deploy --product hosted-service lemonadesocial/lemonade-marketplace-aurora-testnet",
     "deploy:aurora": "yarn manifest aurora && graph deploy --product hosted-service lemonadesocial/lemonade-marketplace-aurora",
     "deploy:astar": "yarn manifest astar && graph deploy --node http://localhost:8020/ --ipfs http://localhost:9095 lemonade-astar",
+    "deploy:avalanche": "yarn manifest avalanche && graph deploy --product hosted-service lemonadesocial/lemonade-avalanche",
     "deploy:bnb-testnet": "yarn manifest bnb-testnet && graph deploy --product hosted-service lemonadesocial/lemonade-marketplace-bnb-testnet",
     "deploy:bnb": "yarn manifest bnb && graph deploy --product hosted-service lemonadesocial/lemonade-marketplace-bnb",
     "deploy:celo": "yarn manifest celo && graph deploy --product hosted-service lemonadesocial/lemonade-celo",
