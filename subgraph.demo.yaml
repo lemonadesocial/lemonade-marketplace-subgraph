@@ -4,10 +4,10 @@ schema:
 dataSources:
   - kind: ethereum/contract
     name: LemonadeMarketplace
-    network: bsc
+    network: avalanche
     source:
       abi: LemonadeMarketplace
-      startBlock: 18962155
+      startBlock: 29534168
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.6
@@ -31,10 +31,10 @@ dataSources:
       file: ./src/mapping.ts
   - kind: ethereum/contract
     name: IERC721
-    network: bsc
+    network: avalanche
     source:
       abi: IERC721
-      startBlock: 18962155
+      startBlock: 29534168
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.6
