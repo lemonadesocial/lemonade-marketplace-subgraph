@@ -27,7 +27,6 @@
     "deploy:optimism-goerli": "yarn manifest optimism-goerli && graph deploy --product hosted-service lemonadesocial/lemonade-optimism-goerli",
     "deploy:optimism": "yarn manifest optimism && graph deploy --product hosted-service lemonadesocial/lemonade-optimism",
     "deploy:polygon": "yarn manifest polygon && graph deploy --product hosted-service lemonadesocial/lemonade-polygon",
-    "deploy:sapphire": "yarn manifest sapphire && graph deploy --node http://localhost:8020/ --ipfs http://localhost:9095 lemonade-sapphire",
     "deploy:unique": "yarn manifest unique && graph deploy --node http://localhost:8020/ --ipfs http://localhost:9095 lemonade-unique",
     "create-local": "graph create --node http://localhost:8020/ lemonade-marketplace",
     "remove-local": "graph remove --node http://localhost:8020/ lemonade-marketplace",
