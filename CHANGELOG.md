@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.20.0](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/compare/v3.19.0...v3.20.0) (2023-05-04)
+
+
+### Features
+
+* add avalanche chain ([67c8a44](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/commit/67c8a442242fe14bd053d28204efee6b566e79f9))
+* remove sapphire chain ([0c4f1eb](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/commit/0c4f1eb06800d0daa6f9814802317e6f2ad71ebf))
+* update demo to avalanche chain ([4d89eb3](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/commit/4d89eb3864e8e2d4df1812d2da60400fb85a4ef7))
+
 ## [3.19.0](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/compare/v3.18.0...v3.19.0) (2023-03-30)
 
 
