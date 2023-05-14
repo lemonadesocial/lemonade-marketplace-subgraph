@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.21.0](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/compare/v3.20.0...v3.21.0) (2023-05-14)
+
+
+### Features
+
+* update astar chain with recent start block ([472ea45](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/commit/472ea4565177a22c8c5859158b4292f6d775f8c4))
+
 ## [3.20.0](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/compare/v3.19.0...v3.20.0) (2023-05-04)
 
 
