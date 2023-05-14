@@ -7,6 +7,7 @@ dataSources:
     network: astar
     source:
       abi: LemonadeMarketplace
+      startBlock: 3500000
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.6
@@ -33,6 +34,7 @@ dataSources:
     network: astar
     source:
       abi: IERC721
+      startBlock: 3500000
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.6
