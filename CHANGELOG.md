@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.22.0](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/compare/v3.21.0...v3.22.0) (2023-08-10)
+
+
+### Features
+
+* add base and zero chains ([ce84d57](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/commit/ce84d57f87f81644dc62b640b1b329dad1d45589))
+
 ## [3.21.0](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/compare/v3.20.0...v3.21.0) (2023-05-14)
 
 
