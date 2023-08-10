@@ -12,6 +12,7 @@
     "deploy:aurora": "yarn manifest aurora && graph deploy --product hosted-service lemonadesocial/lemonade-marketplace-aurora",
     "deploy:astar": "yarn manifest astar && graph deploy --node http://localhost:8020/ --ipfs http://localhost:9095 lemonade-astar",
     "deploy:avalanche": "yarn manifest avalanche && graph deploy --product hosted-service lemonadesocial/lemonade-avalanche",
+    "deploy:base": "yarn manifest base && graph deploy --product hosted-service lemonadesocial/lemonade-base",
     "deploy:bnb-testnet": "yarn manifest bnb-testnet && graph deploy --product hosted-service lemonadesocial/lemonade-marketplace-bnb-testnet",
     "deploy:bnb": "yarn manifest bnb && graph deploy --product hosted-service lemonadesocial/lemonade-marketplace-bnb",
     "deploy:celo": "yarn manifest celo && graph deploy --product hosted-service lemonadesocial/lemonade-celo",
@@ -28,6 +29,7 @@
     "deploy:optimism": "yarn manifest optimism && graph deploy --product hosted-service lemonadesocial/lemonade-optimism",
     "deploy:polygon": "yarn manifest polygon && graph deploy --product hosted-service lemonadesocial/lemonade-polygon",
     "deploy:unique": "yarn manifest unique && graph deploy --node http://localhost:8020/ --ipfs http://localhost:9095 lemonade-unique",
+    "deploy:zero": "yarn manifest zero && graph deploy --node http://localhost:8020/ --ipfs http://localhost:9095 lemonade-zero",
     "create-local": "graph create --node http://localhost:8020/ lemonade-marketplace",
     "remove-local": "graph remove --node http://localhost:8020/ lemonade-marketplace",
     "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 lemonade-marketplace"
