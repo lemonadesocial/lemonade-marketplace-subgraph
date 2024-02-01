@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.23.0](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/compare/v3.22.0...v3.23.0) (2024-02-01)
+
+
+### Features
+
+* add arbitrum sepolia and sepolia chains ([fbaa904](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/commit/fbaa904276c21b24ec9b8e3567ad2bcaa45c3a50))
+
 ## [3.22.0](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/compare/v3.21.0...v3.22.0) (2023-08-10)
 
 
