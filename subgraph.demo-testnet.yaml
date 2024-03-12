@@ -1,6 +1,8 @@
-specVersion: 0.0.2
+specVersion: 1.0.0
 schema:
   file: ./schema.graphql
+indexerHints:
+  prune: auto
 dataSources:
   - kind: ethereum/contract
     name: LemonadeMarketplace
@@ -10,7 +12,7 @@ dataSources:
       startBlock: 20471151
     mapping:
       kind: ethereum/events
-      apiVersion: 0.0.6
+      apiVersion: 0.0.7
       language: wasm/assemblyscript
       entities:
         - Order
@@ -37,7 +39,7 @@ dataSources:
       startBlock: 20471151
     mapping:
       kind: ethereum/events
-      apiVersion: 0.0.6
+      apiVersion: 0.0.7
       language: wasm/assemblyscript
       entities:
         - Token

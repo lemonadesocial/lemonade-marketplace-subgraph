@@ -1,6 +1,11 @@
-specVersion: 0.0.4
+specVersion: 1.0.0
 schema:
   file: ./schema.graphql
+graft:
+  base: QmdofqHzuS29JC3Y3hQe47tf25o8Bqmqk55YmQgHrmXMQn
+  block: 22389799
+indexerHints:
+  prune: auto
 dataSources:
   - kind: ethereum/contract
     name: LemonadeMarketplace
@@ -9,7 +14,7 @@ dataSources:
       abi: LemonadeMarketplace
     mapping:
       kind: ethereum/events
-      apiVersion: 0.0.6
+      apiVersion: 0.0.7
       language: wasm/assemblyscript
       entities:
         - Order
@@ -35,7 +40,7 @@ dataSources:
       abi: IERC721
     mapping:
       kind: ethereum/events
-      apiVersion: 0.0.6
+      apiVersion: 0.0.7
       language: wasm/assemblyscript
       entities:
         - Token
@@ -48,3 +53,5 @@ dataSources:
         - event: Transfer(indexed address,indexed address,indexed uint256)
           handler: handleTransfer
       file: ./src/mapping.ts
+features:
+  - grafting
