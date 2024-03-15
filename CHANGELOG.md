@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.24.0](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/compare/v3.23.0...v3.24.0) (2024-03-15)
+
+
+### Features
+
+* **deps:** upgrade dependencies ([5ba715b](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/commit/5ba715bdd9f110a45ab111770838f4b620ae5217))
+* enable automatic pruning ([3420c52](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/commit/3420c52bafaf1e8d5b100ea9cdc339a3feefc63b))
+* remove arbitrum goerli, aurora testnet, goerli, opal and optimism goerli chains ([e2b77ee](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/commit/e2b77ee73e88a036ceb7d09234d06c667ccc78be))
+
 ## [3.23.0](https://github.com/lemonadesocial/lemonade-marketplace-subgraph/compare/v3.22.0...v3.23.0) (2024-02-01)
 
 
